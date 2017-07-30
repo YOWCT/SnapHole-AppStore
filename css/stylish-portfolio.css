@@ -151,23 +151,55 @@ hr.small {
 /* Header */
 
 .header {
-    display: table;
     position: relative;
     width: 100%;
-    height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    height: 75vh;
+    background: url(../img/bg.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    overflow: hidden;
+}
+.header .row {
+    padding-top: 15vh;
 }
 
+.logo-motto {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+#hero {
+    padding-left: 2em;
+    text-align: left;
+}
+#hero h1 {
+    font-size: 2.75rem;
+}
+#hero h3 {
+    font-size: 1.75rem;
+}
+#download-div {
+    position: relative;
+    margin-top:100px;
+}
+#app-screen {
+    width: 100%;
+}
 /* About */
 
-.about {
-    padding: 50px 0;
+#about {
+    padding: 20px 0;
+    height: 25vh;
 }
 
+#about .container, #about .container .row {
+    height: 100%;
+}
+.reason > h3 {
+    font-size: 1.5em;
+}
 /* Services */
 
 .services {
@@ -183,7 +215,7 @@ hr.small {
 .callout {
     display: table;
     width: 100%;
-    height: 400px;
+    height: 250px;
     color: #fff;
     background: url(../img/callout.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -199,6 +231,7 @@ hr.small {
 }
 
 .portfolio-item {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -213,31 +246,17 @@ hr.small {
     margin: 0 auto;
     float: none;
 }
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
-}
 
 /* Map */
 
 .map {
-    height: 500px;
+    height: 450px;
 }
 
 @media(max-width:768px) {
     .map {
         height: 75%;
     }
-}
-
-/*disable custom maps scrolling behaviour*/
-.scrolloff {
-    pointer-events: none;
 }
 
 /* Footer */
