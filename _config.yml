@@ -12,17 +12,14 @@ url: "https://snaphole.io" # the base hostname & protocol for your site
 owner: SnapHole
 email: admin@snaphole.io
 facebook_username:
-twitter_username:
-github_username:
+twitter_username: yowcivictech
+github_username: YOWCT
 address:
   - line:
   - line:
-  # Feel free to add more lines here 
+  # Feel free to add more lines here
 telephone:
 copyright: SnapHole
-
-# API settings
-google_api_key: AIzaSyCxBDP5yDKaY5MtV959RQ3Po1DH8d3cnqE
 
 # Build settings
 markdown: kramdown

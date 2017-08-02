@@ -5,59 +5,11 @@
 <script src="js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="js/custom.js"></script> 
+<script src="js/custom.js"></script>
 
+<!-- https://github.com/michalsnik/aos -->
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<script>
-function initMap() {
-  // Styles a map in night mode.
-    var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 45.4215, lng: -75.6972},
-    zoom: 14,
-    zoomControl: false,
-    scaleControl: false,
-    scrollwheel: false,
-    disableDoubleClickZoom: true,
-    styles: [
-      {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-      {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-      {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-      
-      {
-        featureType: 'poi.park',
-        elementType: 'geometry',
-        stylers: [{color: '#263c3f'}]
-      },
-      {
-        featureType: 'road',
-        elementType: 'geometry',
-        stylers: [{color: '#38414e'}]
-      },
-      {
-        featureType: 'road',
-        elementType: 'geometry.stroke',
-        stylers: [{color: '#212a37'}]
-      },
-      {
-        featureType: 'road.highway',
-        elementType: 'geometry',
-        stylers: [{color: '#746855'}]
-      },
-      {
-        featureType: 'road.highway',
-        elementType: 'geometry.stroke',
-        stylers: [{color: '#1f2835'}]
-      },
-      {
-        featureType: 'water',
-        elementType: 'geometry',
-        stylers: [{color: '#17263c'}]
-      }
-    ]
-  });
-}
-AOS.init();
-</script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxBDP5yDKaY5MtV959RQ3Po1DH8d3cnqE&callback=initMap">    
-</script>
+<script>AOS.init()</script>
+
+<!-- Custom Map -->
+<script src="js/map.js"></script>
