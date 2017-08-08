@@ -10,6 +10,8 @@ html,
 body {
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -159,6 +161,7 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-attachment: fixed;
     overflow: hidden;
 }
 .header .row {
@@ -191,7 +194,6 @@ hr.small {
 
 #about {
     padding: 20px 0;
-    height: 25vh;
 }
 
 #about .container, #about .container .row {
@@ -213,7 +215,9 @@ hr.small {
     margin: 0px 0px 40px 0px;
     font-size: 1.5em;
 }
-
+.steps-image {
+    width: 120px;
+}
 .service-item {
     margin-bottom: 30px;
 }
@@ -277,6 +281,8 @@ hr.small {
 .card {
     margin: 0 auto;
     float: none;
+    width: 20rem;
+    height: 24rem;
 }
 
 /* Map */
@@ -295,4 +301,82 @@ hr.small {
 
 footer {
     padding: 100px 0;
+}
+
+@media only screen and (max-width: 500px) {
+    /* Header */
+    
+    .header {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: url(../img/bg.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+    }    
+    
+    #app-screen {
+        display: none;
+    }
+    #download {
+        border: 3px solid black;
+        margin: 0px auto;
+    }
+    .reason > p {
+        font-size: 1.2em;
+    }
+    .media-body > p {
+        text-align: left;
+        padding-left: 0.5em;
+        font-size: 1em;
+    }
+    #logo {
+        width: 9em;
+    }
+    #hero {
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: left;
+    }
+    #hero h1 {
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 2.55em;
+    }
+    #hero h3 {
+        font-size: 1.05em;
+        margin: 10px auto 10px auto;
+    }
+    .map {
+        height: 22em;
+    }
+    /* Portfolio */
+    
+    .portfolio {
+        padding: 50px 0;
+    }
+    
+    .portfolio-item {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .img-portfolio {
+        margin: 0 auto;
+    }
+    
+    .img-portfolio:hover {
+        opacity: 0.8;
+    }
+    .card {
+        margin: 0 auto;
+        float: none;
+        width: 20rem;
+        height: 24rem;
+    }
+
 }
