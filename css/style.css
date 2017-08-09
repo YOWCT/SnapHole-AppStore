@@ -34,30 +34,37 @@ body {
 /* Custom Button Styles */
 
 .btn-dark {
+    font-weight: bold;
     border-radius: 0;
-    color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    color: #E5E5E5;
+    background-color: #4D4D4D;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
+.btn-dark:focus {
+    color: #4D4D4D;
+    background-color: #E5E5E5;
 }
 
 .btn-light {
+    font-weight: bold;
     border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
+    color: rgba(255,255,255,0.8);
+    background-color: purple;
+    
 }
-
+.btn-large {
+    font-size: 1.15em;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease-in-out;
+}
 .btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-    color: #333;
+.btn-light:focus {
+    color: purple;
     background-color: rgba(255,255,255,0.8);
 }
+
 
 /* Custom Horizontal Rule */
 
@@ -155,7 +162,7 @@ hr.small {
 .header {
     position: relative;
     width: 100%;
-    height: 75vh;
+    height: 500px;
     background: url(../img/bg.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -259,30 +266,19 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
 }
-
+.btn-large {
+    margin-top: 30px;
+}
 /* Portfolio */
 
 .portfolio {
-    padding: 50px 0;
+    padding: 0;
 }
 
-.portfolio-item {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
-}
-.card {
-    margin: 0 auto;
-    float: none;
-    width: 20rem;
-    height: 24rem;
+.thumbnail {
+    border: none;
+    width:23rem;
+    margin: 0px auto;
 }
 
 /* Map */
@@ -355,28 +351,13 @@ footer {
         height: 22em;
     }
     /* Portfolio */
-    
-    .portfolio {
-        padding: 50px 0;
-    }
-    
-    .portfolio-item {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    
-    .img-portfolio {
-        margin: 0 auto;
-    }
-    
-    .img-portfolio:hover {
-        opacity: 0.8;
-    }
-    .card {
-        margin: 0 auto;
-        float: none;
-        width: 20rem;
-        height: 24rem;
-    }
 
+    .portfolio {
+        padding: 20px 0;
+    }
+    .thumbnail {
+        border: none;
+        width: 23rem;
+        margin: 0px auto;
+    }
 }
