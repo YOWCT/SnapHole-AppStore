@@ -16,3 +16,7 @@ See the site in action at https://volny.github.io/stylish-portfolio-jekyll/
 ## AOS Library
 
 https://github.com/michalsnik/aos#-animations
+
+## Apple Store Marketing Guideline
+
+https://developer.apple.com/app-store/marketing/guidelines/

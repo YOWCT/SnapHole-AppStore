@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "snaphole-appstore",
+  "description": "SnapHole - AppStore website",
+  "scripts": {
+    "build": "jekyll build",
+    "start": "jekyll serve"
+  },
+  "dependencies": {
+    "mapbox-gl": "^0.39.1"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^0.39.4"
+  }
+}
